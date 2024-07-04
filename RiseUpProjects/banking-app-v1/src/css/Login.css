@@ -1,0 +1,15 @@
+.login__form {
+  margin: 10%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 7% 0 7%;
+  justify-content: center;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  padding: 10px 25px;
+}

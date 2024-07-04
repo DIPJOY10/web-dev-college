@@ -1,0 +1,48 @@
+.skillrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+.skillrow > p {
+  font-size: 1.2rem;
+  margin-left: 3vw;
+}
+.container {
+  width: 100%; /* Full width */
+  max-width: 30vw !important;
+  background-color: #ddd; /* Grey background */
+  border-radius: 30px;
+}
+
+.skillbar {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+  border-radius: 30px;
+}
+.html {
+  width: 90%;
+  background-color: gray;
+}
+.css {
+  width: 40%;
+  background-color: gray;
+}
+.javascript {
+  width: 60%;
+  background-color: gray;
+}
+.react {
+  width: 75%;
+  background-color: gray;
+}
+.node {
+  width: 50%;
+  background-color: gray;
+}
+.java {
+  width: 80%;
+  background-color: gray;
+}

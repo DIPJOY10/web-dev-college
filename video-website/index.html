@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Travel</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2>Travel</h2>
+            <div class="toggle"><i class="fa fa-bars fa-2x"></i></div>
+        </header>
+        
+        <video src="contents/Pexels Videos 1570894.mp4" muted autoplay loop></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h1>Never Stop!</h1>
+            <h2>Explore The World</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Ullam  ipsam reprehenderit praesentium earum. Nisi eos suscipit inventore excepturi veritatis, 
+              amet vero iusto architecto  quas?
+            </p>
+            <button>Explore</button>
+        </div>
+
+        <ul class="social">
+            <li><i class="fa fa-facebook-f fa-2x"></i></li>
+            <li><i class="fa fa-twitter fa-2x"></i></li>
+            <li><i class="fa fa-instagram fa-2x"></i></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+    </div>
+    
+    <script>
+        const menuToggle=document.querySelector(".toggle");
+        const icon=document.querySelector(".toggle i");
+        const showcase=document.querySelector(".showcase");
+        menuToggle.addEventListener('click',()=>{
+            if(icon.classList.contains("fa-bars")){
+                icon.classList.replace("fa-bars","fa-times");
+            }else{
+                icon.classList.replace("fa-times","fa-bars");
+            }
+            showcase.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

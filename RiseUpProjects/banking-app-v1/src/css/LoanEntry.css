@@ -1,0 +1,5 @@
+.form > button {
+  margin: 10px auto;
+  padding: 10px 25px;
+  border-radius: 10px;
+}

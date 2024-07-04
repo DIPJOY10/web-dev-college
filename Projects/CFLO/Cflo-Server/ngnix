@@ -1,0 +1,32 @@
+server {
+    if ($host = api.example.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name api.example.com;
+    return 404; # managed by Certbot
+
+}
+
+server {
+    root /var/www/html;
+    listen 443 ssl;
+    server_name api.example.com;
+    location / {
+        proxy_pass http://127.0.0.1:5555;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+    ssl_certificate /etc/letsencrypt/live/api.example.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/api.example.com/privkey.pem; # managed by Certbot
+}
+
+#ssh -i "apicontractfloserver1.pem" ubuntu@ec2-54-245-150-166.us-west-2.compute.amazonaws.com
+
+
+

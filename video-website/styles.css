@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* overflow: hidden; */
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.active {
+  position: absolute;
+  right: 300px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+header h2 {
+  cursor: pointer;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: #a7c5eb;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  background: #a7c5eb;
+  z-index: -1;
+  mix-blend-mode: overlay;
+}
+
+.text h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.text h2 {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.text p {
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text button {
+  padding: 10px 30px;
+  background: #fff;
+  color: #358bfc;
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.text button:hover {
+  background: #358bfc;
+  color: #fff;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.social li:hover {
+  transform: translateY(-8px);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style: none;
+  background: #a7c5eb;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu li a {
+  margin-left: 20%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+
+.menu li a:hover {
+  color: #358bfc;
+}

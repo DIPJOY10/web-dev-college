@@ -1,0 +1,65 @@
+<%-include("partials/header")-%>
+  <div class="mainCont">
+    <div class="register">
+      <h2>Member Entry</h2>
+      <form spellcheck="false" action="/memberRegister" method="POST" class="form">
+
+        <div class="row1">
+          <label htmlFor="">Name</label>
+          <input name="userName" type="text" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label htmlFor="">Father's Name</label>
+          <input name="fName" type="text" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label htmlFor="">Address</label>
+          <textarea name="address" id="" cols="50" row1s="3" autocomplete="off" required></textarea>
+        </div>
+
+        <div class="row1">
+          <label htmlFor="">Phone Number</label>
+          <input name="phone" type="number" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label htmlFor="">PIN NO.</label>
+          <input name="pin" type="number" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label htmlFor="">pan card no.</label>
+          <input name="pan" type="text" autocomplete="off" required/>
+        </div>
+
+        <div class="row1">
+          <label htmlFor="">voter card no.</label>
+          <input name="voter" type="text" autocomplete="off" required/>
+        </div>
+
+        <div class="row1">
+          <label htmlFor="">adhar card no.</label>
+          <input name="adhar" type="number" autocomplete="off" required/>
+        </div>
+
+        <div class="row1">
+          <label htmlFor="">Date Of Birth</label>
+          <input name="dob" type="date" autocomplete="off" required/>
+        </div>
+
+        <div class="row1">
+          <label htmlFor="">Email</label>
+          <input name="email" type="email" autocomplete="off" required/>
+        </div>
+
+        <div class="btnCont">
+          <button class="registerbutton" type="submit">
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <%-include("partials/footer")-%>

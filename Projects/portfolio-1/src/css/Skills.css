@@ -1,0 +1,45 @@
+.skills {
+  padding: 0 4vw 8vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  /* background-color: #eeeeee; */
+}
+.skills > h1 {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper {
+  display: flex;
+}
+.skills__left {
+  padding-top: 4vw;
+  padding-left: 1vw;
+  flex: 0.4;
+  font-size: 1.2em;
+  background-image: url(../images/backcolour.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  border-radius: 30px;
+}
+.skills__left > p {
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 1.4em;
+}
+.skills__left > h2 {
+  margin-top: -1vw;
+  padding-bottom: 0.5vw;
+  text-align: center;
+  font-family: "Averia Serif Libre", cursive;
+}
+.wrapper > .skills__right {
+  flex: 0.6;
+}
+.skills__heading {
+  padding: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+}

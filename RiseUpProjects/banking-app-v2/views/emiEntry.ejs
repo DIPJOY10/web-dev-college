@@ -1,0 +1,102 @@
+<%-include("partials/header")-%>
+  <div class="mainCont">
+    <div class="register">
+      <h2>Loan Holder Details</h2>
+      <form spellcheck="false" class="form" action="/Tab/loan/EMIentry/save" method="POST">
+        <div class="row1">
+          <label>Applicant Name</label>
+          <input name="loanApplicantName" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Member ID</label>
+          <input name="memberID" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Branch Name</label>
+          <input name="branchName" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Loan Account number</label>
+          <input name="loanAccountNumber" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Loan Category</label>
+          <input name="loanCategory" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Sub Category</label>
+          <input name="loanSubCategory" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Plan Code</label>
+          <input name="loanPlanCode" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Approved Amount</label>
+          <input name="loanApprovedAmount" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Loan Tenure</label>
+          <input name="loanTenure" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Payment Mode</label>
+          <input name="loanPaymentMode" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Number of Installments</label>
+          <input name="noInstallments" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Interest Amount</label>
+          <input name="loanInterestAmount" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Total Payable</label>
+          <input name="totalPayable" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>EMI Amount</label>
+          <input name="loanEmiAmount" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Processing Charge</label>
+          <input name="loanProcessingCharge" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Other Charges</label>
+          <input name="loanOtherCharges" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Annual Interest Rate</label>
+          <input name="loanInterestRate" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Interest Type</label>
+          <input name="LoanInterestType" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Advisor Name</label>
+          <input name="loanAdvisorName" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>City</label>
+          <input name="city" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>State</label>
+          <input name="state" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Narration</label>
+          <input name="loanNarration" type="text" autocomplete="off" required/>
+        </div>
+        <div class="btnCont">
+          <div class="btn">
+            <button type="submit">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <%-include("partials/footer")-%>

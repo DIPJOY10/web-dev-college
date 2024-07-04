@@ -1,0 +1,154 @@
+body {
+  background-color: #faf4ff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-heading {
+  text-align: center;
+  font-style: normal;
+  font-weight:400;
+}
+
+.below-heading {
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.desc {
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  width: 35%;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.Team-builder {
+  position: absolute;
+  top: 180px;
+  left: 500px;
+  width: 23%;
+  height: 210px;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-top: solid;
+  border-top-width: medium;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-color: red;
+}
+
+.team1 {
+  padding-left: 30px;
+}
+
+.para1 {
+  text-align: left;
+  margin-left: 30px;
+  width: 80%;
+}
+
+.img1 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin-left: 30px;
+}
+
+.Supervisor {
+  position: absolute;
+  left: 150px;
+  top: 300px;
+  width: 23%;
+  height: 210px;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-top: solid;
+  border-top-width: medium;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-color: #aeefec;
+}
+
+.team2 {
+  padding-left: 30px;
+}
+
+.para2 {
+  text-align: left;
+  margin-left: 30px;
+  width: 80%;
+}
+
+.img2 {
+  margin-left: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.Calculator {
+  position: absolute;
+  left: 850px;
+  top: 300px;
+  width: 23%;
+  height: 210px;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-top: solid;
+  border-top-width: medium;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-color: #00a8cc;
+}
+
+.team3 {
+  padding-left: 30px;
+}
+
+.para3 {
+  text-align: left;
+  margin-left: 30px;
+  width: 80%;
+}
+
+.img3 {
+  margin-left: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.Karma {
+  position: absolute;
+  left: 500px;
+  top: 430px;
+  width: 23%;
+  height: 210px;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-top: solid;
+  border-top-width: medium;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-color: #ffd31d;
+}
+
+.team4 {
+  padding-left: 30px;
+}
+
+.para4 {
+  text-align: left;
+  margin-left: 30px;
+  width: 80%;
+}
+
+.img4 {
+  margin-left: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

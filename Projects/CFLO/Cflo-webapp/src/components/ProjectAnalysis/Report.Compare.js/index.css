@@ -1,0 +1,14 @@
+.compareDataCont {
+    display: flex;
+    min-width: calc(100% - 360px);
+    overflow-x: auto;
+}
+
+.compareDataCont::-webkit-scrollbar {
+    display: none;
+}
+
+.compareDataCont {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

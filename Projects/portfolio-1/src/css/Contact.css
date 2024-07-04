@@ -1,0 +1,105 @@
+.contact {
+  background-color: #393e46;
+}
+.contact__info {
+  display: flex;
+  padding: 1.2vw;
+}
+.contact__left {
+  display: flex;
+  flex: 0.65;
+}
+.contact__right {
+  display: flex;
+  flex: 0.35;
+}
+.line {
+  border: 2px solid #eeeeee;
+}
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 1vw;
+}
+.form {
+  position: relative;
+  top: 1%;
+  left: 10%;
+  bottom: 5%;
+}
+.env {
+  padding: 2vw;
+  position: relative;
+  left: 5%;
+}
+.contact__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw;
+  align-items: center;
+}
+.contact__row > label {
+  padding: 2vw;
+  color: #ebeeee;
+}
+.contact__row > input {
+  outline: none;
+  width: 25vw;
+  height: 5vh;
+  color: #222831;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #f8f1f1;
+}
+.submit > button {
+  height: 7vh;
+  width: 12vw;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 14vw;
+  margin-bottom: 2vw;
+}
+
+.submit > button:hover {
+  color: white;
+  background-color: black;
+}
+.contact__right {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__right > div > a {
+  text-decoration: none;
+  color: white;
+}
+.contact__right > div {
+  padding: 1.5vw;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+}
+.contact__right > div:last-child {
+  text-align: right;
+}
+.contact__right > div:nth-last-child(2) {
+  height: 5vh;
+}
+.link {
+  text-decoration: none;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1vw;
+  margin-left: 0.5vw;
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.link:hover {
+  color: black;
+  background-color: white;
+}

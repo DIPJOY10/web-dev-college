@@ -1,0 +1,15 @@
+.work {
+  padding: 2vw;
+  background-color: black;
+}
+.work > h1 {
+  text-align: center;
+  color: white;
+  font-family: "Averia Serif Libre", cursive;
+  padding: 1vw;
+}
+.work__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

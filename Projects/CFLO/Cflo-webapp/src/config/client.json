@@ -1,0 +1,17 @@
+{
+    "firebaseConfig":{
+        "apiKey": "AIzaSyDaF_VCbQPjl_IRqLTNb2WCl-9XmXSZD2s",
+        "authDomain": "contractflo-prod.firebaseapp.com",
+        "projectId": "contractflo-prod",
+        "storageBucket": "contractflo-prod.appspot.com",
+        "messagingSenderId": "135251314341",
+        "appId": "1:135251314341:web:8a05e3b75224c197e56f4c",
+        "measurementId": "G-GQV1HT3DFR"
+    },
+    "stripePk": "pk_test_51IVm1zAeuh7uExU6gESNn5lDGU51knz6yY4FOZR3ZpybIIKBcsvhcVCZx4kg3og7ufRvIC2MqTR8aJPrlq2vY6o4007UrPW90o",
+    "stripePrices":{
+        "monthly": "price_1J2fvVAeuh7uExU6IoZnt6oB",
+        "annual": "price_1J2fxsAeuh7uExU6wtS1Tu8j"
+    },
+    "mapKey":"AIzaSyDrLKkpH8Hie1IooAbKo5n2v6Kz2V7xz-g"
+}

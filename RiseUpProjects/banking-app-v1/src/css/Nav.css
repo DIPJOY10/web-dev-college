@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  padding-bottom: 2%;
+  background-color: black;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5em;
+}
+
+.logo:hover {
+  color: grey;
+}
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  margin: 0 10vw;
+}
+li {
+  font-size: 2em;
+  text-decoration: none;
+}
+
+li:hover {
+  color: grey;
+}

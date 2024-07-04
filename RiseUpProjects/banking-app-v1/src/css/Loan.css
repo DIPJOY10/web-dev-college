@@ -1,0 +1,22 @@
+.loan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2vw;
+}
+.loan__links {
+  height: 10vh;
+  width: 20vw;
+  background-color: black;
+}
+
+.loan__link {
+  position: relative;
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.loan__link:hover {
+  color: grey;
+}

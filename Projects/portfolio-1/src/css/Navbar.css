@@ -1,0 +1,30 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  height: 5vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  z-index: 100;
+  margin-right: 0;
+}
+.navbar__contents {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.navbar__contents > a {
+  color: white;
+  text-decoration: none;
+  margin: 1vw 2vw 2vw;
+}
+.nav__black {
+  background-color: #1a1c20;
+  opacity: 0.6;
+}
+.active {
+  color: #f06000 !important;
+}

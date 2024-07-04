@@ -1,0 +1,47 @@
+.marker-position {
+    position: relative;
+    bottom: 33px;
+    background-color: #FF5F1F;
+    text-transform: capitalize;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+
+#react-doc-viewer {
+    height: 100vh;
+    width: calc(100% - 15px);
+    margin-left: 15px;
+}
+
+#react-doc-viewer>div::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#react-doc-viewer>div {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.style1 {
+    width: 100%;
+}
+
+.style1 .ql-container {
+    min-height: 10rem;
+    max-height: 14rem;
+    overflow-y: auto;
+    border: none;
+    font-size: .9rem;
+}
+
+.style1 .ql-toolbar {
+    background-color: white;
+}
+
+.style1 .ql-editor {
+    margin-left: 15px;
+    padding: 0px;
+}

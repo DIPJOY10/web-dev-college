@@ -1,0 +1,123 @@
+<%-include("partials/header")-%>
+
+
+<form spellcheck="false" class="reportsearch" method="POST" action="/Tab/report/search">
+    <select name="reportType">
+      <option value="PersonalInfo">Personal Info</option>
+      <option value="DepositInfo">Deposit Info</option>
+      <option value="loanInfo">Loan Info</option>
+    </select>    
+    <button type="submit">Search</button>
+</form>
+
+
+<% if(showType === 'PersonalInfo') { %>
+<table>
+   <tr>
+       <th>Name</th>
+       <th>Member ID</th>
+       <th>Address</th>
+       <th>Voter ID</th>
+       <th>Adhar No.</th>
+       <th>Pan Card No.</th>
+       <th>Phone No</th>
+       <th>Email ID</th>
+       <th>Date Of Birth</th>
+   </tr>
+   <%  Users.forEach(function(post){ %>
+   <tr>
+    <td><%=post.userName%></td>
+    <td><%=post.AccNo%></td>
+    <td><%=post.address%></td>
+    <td><%=post.voter%></td>
+    <td><%=post.adhar%></td>
+    <td><%=post.pan%></td>
+    <td><%=post.phone%></td>
+    <td><%=post.email%></td>
+    <td><%=post.dob%></td>
+   </tr>
+   <% }) %>
+</table>
+
+<% } %>
+
+
+<% if(showType === 'DepositInfo') { %>
+<table>
+   <tr>
+       <th>Name</th>
+       <th>Deposit Type</th>
+       <th>Deposit Amount</th>
+       <th>Maturity Amount</th>
+       <th>Total Deposit Amount</th>
+       <th>Nomini Name</th>
+       <th>Nomini Relationship</th>
+       <th>Nomini Age</th>
+       <th>Nomini Proof</th>
+       <th>Maturity Type</th>
+       <th>Ref. Number</th>
+   </tr>
+   <%  Users.forEach(function(post){ %>
+   <tr>
+    <td><%=post.userName%></td>
+    <td><%=post.depositType%></td>
+    <td><%=post.depositAmount%></td>
+    <td><%=post.maturityAmount%></td>
+    <td><%=post.totalDepositAmount%></td>
+    <td><%=post.nominiName%></td>
+    <td><%=post.nominiRelationship%></td>
+    <td><%=post.nominiAge%></td>
+    <td><%=post.nominiProof%></td>
+    <td><%=post.maturityType%></td>
+    <td><%=post.refNumber%></td>
+   </tr>
+   <% }) %>
+</table>
+<% } %>
+
+
+<% if(showType === 'loanInfo') { %>
+<table>
+   <tr>
+       <th>Name</th>
+       <th>Occupation</th>
+       <th>Monthly Income</th>
+       <th>Loan Amount</th>
+       <th>CreditScore</th>
+       <th>Sanction Amonut Loan</th>
+       <th>Loan Type</th>
+       <th>Loan Colateral</th>
+       <th>Colateral Amount</th>
+       <th>Installment Amount</th>
+       <th>Loan PaymentType</th>
+       <th>Loan Period</th>
+       <th>Branch Name</th>
+   </tr>
+   <%  Users.forEach(function(post){ %>
+   <tr>
+    <td><%=post.userName%></td>
+    <td><%=post.occupation%></td>
+    <td><%=post.monthlyIncome%></td>
+    <td><%=post.loanAmount%></td>
+    <td><%=post.creditScore%></td>
+    <td><%=post.sanctionAmountLoan%></td>
+    <td><%=post.loanType%></td>
+    <td><%=post.loanColateral%></td>
+    <td><%=post.colateralAmount%></td>
+    <td><%=post.installmentAmount%></td>
+    <td><%=post.loanPaymentType%></td>
+    <td><%=post.loanPeriod%></td>
+    <td><%=post.branchName%></td>
+   </tr>
+   <% }) %>
+</table>
+<% } %>
+
+
+
+
+
+<%-include("partials/footer")-%> 
+
+
+

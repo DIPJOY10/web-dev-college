@@ -1,0 +1,12 @@
+.style{ 
+	width: 100%;
+}
+.style .ql-container{
+	height: 10rem;
+	border-radius: 0 0 5px 5px;
+	font-size: .9rem;
+}
+.style .ql-toolbar{
+	border-radius: 5px 5px 0 0;
+	background-color: white;
+}

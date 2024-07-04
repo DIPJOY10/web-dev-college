@@ -1,0 +1,43 @@
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.separate {
+  background-color: rgb(74, 74, 77);
+  width: 100%;
+  height: 2px;
+}
+
+.form {
+  width: 50%;
+  margin-left: 25vw;
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  justify-content: space-between;
+}
+
+.row > :nth-child(2) {
+  padding: 1%;
+}
+
+.form > :nth-last-child(1) {
+  position: relative;
+  bottom: -10%;
+  margin-top: 5%;
+  background-color: white;
+}
+
+.button {
+  padding: 10px 25px;
+}

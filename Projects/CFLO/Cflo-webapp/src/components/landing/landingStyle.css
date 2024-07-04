@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(65, 65, 65);
+  overflow: hidden;
+}
+
+.network {
+  background-color: #2e73f8;
+  color: white;
+}
+
+.leftBox {
+  width: 7%;
+  border-right: 2px solid lightgray;
+}
+
+/* .network .leftBox {
+  border-right: 2px solid white;
+} */
+
+.rightBox {
+  width: 93%;
+  padding-bottom: 150px;
+}
+
+.innerBoxes {
+  display: flex;
+}
+
+.service .innerLeftBox,
+.service .innerRightBox {
+  width: 50%;
+}
+
+.paddingLeft {
+  padding-left: 30px;
+}
+.paddingRight {
+  padding-right: 30px;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.svgCircleBox {
+  /* display: inline-block; */
+  width: 0;
+  overflow: visible;
+}
+
+.svgCircleImage {
+  transform: translateX(-55%);
+  /* margin-left: -55%; */
+}
+
+.headingPrimary {
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 45px;
+}
+
+.headingList {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.listItem {
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+}
+
+.listItem:nth-of-type(1) {
+  margin-top: 80px;
+}
+
+.itemLeft,
+.itemRight {
+  width: 50%;
+  /* overflow: hidden; */
+}
+
+.para {
+  font-size: 24px;
+}
+
+.imageBox {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 85%;
+  transform: translateX(25%);
+  opacity: 0;
+  transition: transform 0.5s ease-in;
+}
+
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.image,
+.fixedImage {
+  width: 100%;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  border-radius: 5px;
+}
+
+.innerRightBox {
+  position: relative;
+}
+
+.fixedImageBox {
+  position: absolute;
+  right: 20%;
+  top: 0;
+  width: 80%;
+}

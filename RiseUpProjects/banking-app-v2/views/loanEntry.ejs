@@ -1,0 +1,119 @@
+<%-include("partials/header")-%>
+  <div class="mainCont">
+    <div class="register">
+      <h2>New Loan Entry</h2>
+
+      <form spellcheck="false" class="rowSearch" method="POST" action="/NewLoanEntry/search">
+        <h4>Member Code</h4>
+        <input name="memberCode" id="code" type="text" autocomplete="off" />
+        <button class="submit" type="submit">Search</button>
+      </form>
+
+      <div class="form">
+        <div class="row1">
+          <label>Name</label>
+          <input name="username" value="<%=  loanUserName %>" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Address</label>
+          <input name="address" value="<%=  loanUserAddress %>" cols="35" row1s="2" autocomplete="off" required></input>
+        </div>
+        <div class="row1">
+          <label>PIN No.</label>
+          <input value="<%=  loanUserPIN %>" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Voter Card No.</label>
+          <input value="<%=  loanUserVoter %>" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Adhar Card No.</label>
+          <input value="<%=  loanUserAdhar %>" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Date Of Birth</label>
+          <input value="<%=  loanUserDob %>" type="date" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Phone No.</label>
+          <input value="<%=  loanUserPhone %>" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Email</label>
+          <input value="<%=  loanUserEmail %>" type="email" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>PAN Card No.</label>
+          <input value="<%= loanUserPan %>" type="number" autocomplete="off" required/>
+        </div>
+      </div>
+      <form spellcheck="false" class="form" method="POST" action="/Tab/loan/NewLoanEntry/save">
+        <!-- <div class="row1">
+            <label>Photo</label>
+            <input type="text" />
+          </div> -->
+        <!-- <div class="row1">
+            <label>Signature</label>
+            <input type="text" />
+          </div> -->
+        <div class="row1">
+          <label>Monthly Income</label>
+          <input name="monthlyIncome" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Occupation</label>
+          <input name="occupation" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Required Loan Amount</label>
+          <input name="loanAmount" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Credit Score</label>
+          <input name="creditScore" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Sanction Amount Loan</label>
+          <input name="sanctionAmountLoan" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Loan Period</label>
+          <input name="loanPeriod" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Loan Type</label>
+          <input name="loanType" list="loanType" autocomplete="off" required/>
+          <datalist id="loanType">
+            <option value="Weekly"></option>
+            <option value="Daily"></option>
+            <option value="Monthly"></option>
+          </datalist>
+        </div>
+        <div class="row1">
+          <label>Colateral For loan</label>
+          <input name="loanColateral" type="text" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Colateral Amount</label>
+          <input name="colateralAmount" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Installment Amount</label>
+          <input name="installmentAmount" type="number" autocomplete="off" required/>
+        </div>
+        <div class="row1">
+          <label>Payment Type</label>
+          <input name="loanPaymentType" list="payType" autocomplete="off" required/>
+          <datalist id="payType">
+            <option value="NEFT"></option>
+            <option value="CASH"></option>
+            <option value="WITH IN SB"></option>
+          </datalist>
+        </div>
+        <div class="btnCont">
+          <button class="saveButton" type="submit">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <%-include("partials/footer")-%>

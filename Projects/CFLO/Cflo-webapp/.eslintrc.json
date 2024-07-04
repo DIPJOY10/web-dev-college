@@ -1,0 +1,86 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "google"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": 0,
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/static-property-placement": [
+            "error",
+            "static public field"
+        ],
+        "react/jsx-key": 1, // Validate JSX has key prop when in array or iterator
+        "no-alert": "error",
+        "no-underscore-dangle": 0,
+        "no-console": "off",
+        "no-nested-ternary": 0,
+        "no-param-reassign": 0, // Changed the parameter directly
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ], // Allow i++ in loops
+        "max-len": 0, // Max Line Length
+        "brace-style": [
+            "error",
+            "stroustrup",
+            {
+                "allowSingleLine": true
+            }
+        ], // Allow if/else in single line
+        "jsx-a11y/no-onchange": 0, // Allow onChange (instead of onBlur)
+        "jsx-a11y/label-has-for": 0,
+        "jsx-a11y/label-has-associated-control": 0,
+        "import/no-extraneous-dependencies": [
+            "off",
+            {
+                "devDependencies": [
+                    "** /*.test.js",
+                    "**/*.spec.js",
+                    "** /*.test.jsx",
+                    "**/*setupTests.js"
+                ]
+            }
+        ], // For JEST/Enzyme
+        "prefer-destructuring": [
+            "error",
+            {
+                "array": false,
+                "object": false
+            }
+        ],
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off",
+        "no-unused-vars": "off",
+        "require-jsdoc": "off",
+        "linebreak-style":["error","windows"]
+    }
+}

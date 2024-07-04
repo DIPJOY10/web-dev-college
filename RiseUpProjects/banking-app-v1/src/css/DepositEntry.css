@@ -1,0 +1,19 @@
+.dep_form {
+  padding: 10%;
+}
+.row {
+  background-color: #000;
+  color: white;
+}
+
+h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.dep_form > button {
+  margin-top: 2%;
+  position: absolute;
+  margin-left: 30%;
+  padding: 1% 3%;
+}

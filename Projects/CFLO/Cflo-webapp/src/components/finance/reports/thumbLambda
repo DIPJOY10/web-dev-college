@@ -1,0 +1,105 @@
+const sharp = require('sharp');
+const path = require('path');
+var AWS = require('aws-sdk');
+
+// Set the REGION
+AWS.config.update({
+    region: "us-west-2"
+});
+var s3 = new AWS.S3();
+
+exports.handler = async (event, context, callback) => {
+// Print the event that we got
+    console.log(JSON.stringify(event));
+    var records = event.Records;
+    var size = records.length;
+ for (var index = 0; index < size; index++) {
+     var record = records[index];
+console.log(record);
+// Extract the file name, path and extension
+        var fileName = path.parse(record.s3.object.key).name;
+
+        var fileExt = path.parse(record.s3.object.key).ext;
+// Log file name, path and extension
+        console.log( ", fileName:" + fileName + ", fileExt:" + fileExt);
+// Read the image object that was added to the S3 bucket
+        var imageObjectParam = {
+            Bucket: record.s3.bucket.name,
+            Key: record.s3.object.key
+        }
+console.log(JSON.stringify(imageObjectParam));
+var imageObject = await s3.getObject(imageObjectParam).promise();
+console.log(JSON.stringify(imageObject));
+var resizePromise1 = sharp(imageObject.Body)
+                            .resize({
+                                width: 50,
+                                height: 50,
+                                fit: sharp.fit.cover
+                            })
+                            .withMetadata()
+                            .toBuffer();
+// Use sharp to create a 800px x 800px coverphoto
+        var resizePromise2 = sharp(imageObject.Body)
+                            .resize({
+                                width: 150,
+                                height: 150,
+                                fit: sharp.fit.cover
+                            })
+                            .withMetadata()
+                            .toBuffer();
+                            
+        var resizePromise3 = sharp(imageObject.Body)
+                            .resize({
+                                width: 400,
+                                height: 400,
+                                fit: sharp.fit.cover
+                            })
+                            .withMetadata()
+                            .toBuffer();
+        var promises = [];
+        promises.push(resizePromise1)
+        promises.push(resizePromise2)
+        promises.push(resizePromise3)
+        
+        var result = await Promise.all(promises);
+        console.log("result:" + JSON.stringify(result));
+        
+        var putObjectParam1 = {
+            Body: result[0],
+            Bucket: "devthumb",
+            Key: fileName + "_thumbnail" + fileExt,
+            ACL: "public-read",
+            CacheControl: "max-age=3600",
+            ContentType: "image/" + fileExt.substring(1)
+        }
+        
+        console.log("putObjectParam1:" + JSON.stringify(putObjectParam1));
+var putResult1 = await s3.putObject(putObjectParam1).promise();
+console.log("putResult1:" + JSON.stringify(putResult1));
+
+var putObjectParam2 = {
+            Body: result[1],
+            Bucket: "devsmall",
+            Key: fileName + "_coverphoto" + fileExt,
+            ACL: "public-read",
+            CacheControl: "max-age=3600",
+            ContentType: "image/" + fileExt.substring(1)
+        }
+console.log("putObjectParam2:" + JSON.stringify(putObjectParam2));
+var putResult2 = await s3.putObject(putObjectParam2).promise();
+console.log("putResult2:" + JSON.stringify(putResult2));
+
+var putObjectParam3 = {
+            Body: result[2],
+            Bucket: "devmedium",
+            Key: fileName + "_coverphoto" + fileExt,
+            ACL: "public-read",
+            CacheControl: "max-age=3600",
+            ContentType: "image/" + fileExt.substring(1)
+        }
+console.log("putObjectParam2:" + JSON.stringify(putObjectParam3));
+var putResult3 = await s3.putObject(putObjectParam3).promise();
+console.log("putResult3:" + JSON.stringify(putResult3));
+    }
+}
+

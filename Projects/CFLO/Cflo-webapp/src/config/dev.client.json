@@ -1,0 +1,17 @@
+{
+    "firebaseConfig":{
+        "apiKey": "AIzaSyDrLKkpH8Hie1IooAbKo5n2v6Kz2V7xz-g",
+        "authDomain": "dev-contractflo.firebaseapp.com",
+        "databaseURL": "https://dev-contractflo.firebaseio.com",
+        "projectId": "dev-contractflo",
+        "storageBucket": "dev-contractflo.appspot.com",
+        "messagingSenderId": "671558970982",
+        "appId": "1:671558970982:web:b6c60a6268862feefa47a7"
+    },
+    "stripePk": "pk_test_51IVm1zAeuh7uExU6gESNn5lDGU51knz6yY4FOZR3ZpybIIKBcsvhcVCZx4kg3og7ufRvIC2MqTR8aJPrlq2vY6o4007UrPW90o",
+    "stripePrices":{
+        "monthly": "price_1J2fvVAeuh7uExU6IoZnt6oB",
+        "annual": "price_1J2fxsAeuh7uExU6wtS1Tu8j"
+    },
+    "mapKey":"AIzaSyDrLKkpH8Hie1IooAbKo5n2v6Kz2V7xz-g"
+}

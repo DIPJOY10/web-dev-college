@@ -1,0 +1,159 @@
+<%-include("partials/header")-%>
+  <div class="mainCont">
+    <div class="register">
+
+      <h2>Deposit Entry Form</h2>
+      <!-- first form -->
+      <!-- <form spellcheck="false" class="form" method="POST" action="/search">
+
+        <div class="row1">
+          <h4>Member Code</h4>
+          <input name="uniqueId" class="code" type="text" autocomplete="off" />
+        </div>
+        <button class="submit" type="submit">
+          Search
+        </button>
+
+      </form> -->
+
+      <form spellcheck="false" class="rowSearch" method="POST" action="/search">
+        <h4>Member Code</h4>
+        <input name="uniqueId" class="code" type="text" autocomplete="off" required/>
+        <button class="submit" type="submit">Search</button>
+      </form>
+
+
+      <!-- second form -->
+      <form spellcheck="false" class="form" action="">
+
+        <div class="row1">
+          <label>Name</label>
+          <input name="userName" value="<%= user_name %>" type="text" autocomplete="off" required/>
+        </div>
+
+        <div class="row1">
+          <label>Address</label>
+          <input name="address" value="<%=  user_address %>" cols="40" rows="3" autocomplete="off" required></input>
+        </div>
+
+        <div class="row1">
+          <label>PIN</label>
+          <input name="pin" value="<%=  user_PIN %>" type="number" autocomplete="off" required/>
+        </div>
+
+        <div class="row1">
+          <label>Voter Card Number</label>
+          <input name="voter" value="<%=  user_voter %>" type="text" autocomplete="off" required/>
+        </div>
+
+        <div class="row1">
+          <label>Adhar Card Number</label>
+          <input name="adhar" value="<%=  user_adhar %>" type="number" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label>Date Of Birth</label>
+          <input name="dob" value="<%=  user_dob %>" type="date" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label>Phone Number</label>
+          <input name="phone" value="<%=  user_phone %>" type="phone" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label>Email</label>
+          <input name="email" value="<%=  user_email %>" type="email" autocomplete="off" required />
+        </div>
+      </form>
+
+      <h3>Deposit</h3>
+      <form spellcheck="false" class="form" action="/Tab/deposit/save" method="POST">
+        <!-- subpart 1 -->
+        <div class="row1">
+          <label>Type</label>
+          <input name="depositType" list="dep" />
+          <datalist id="dep">
+            <option value="FD"></option>
+            <option value="RD"></option>
+            <option value="MIS"></option>
+            <option value="DD"></option>
+          </datalist>
+        </div>
+
+        <div class="row1">
+          <label>Amount</label>
+          <input name="depositAmount" type="number" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label>Time Period</label>
+          <input name="depositTimePeriod" type="number" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label>Maturity Amount</label>
+          <input name="maturityAmount" type="number" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label>Total Deposit Amount</label>
+          <input name="totalDepositAmount" type="number" autocomplete="off" required />
+        </div>
+
+        <!-- subpart 2 -->
+         <h3>Nomini Detail</h3>
+
+        <div class="row1">
+          <label>Name</label>
+          <input name="nominiName" type="text" autocomplete="off" required />
+        </div>
+
+        <div class="row1">
+          <label>Relationship</label>
+          <input name="nominiRelationship" list="rltn" autocomplete="off" required/>
+          <datalist id="rltn">
+            <option value="Father"></option>
+            <option value="Mother"></option>
+            <option value="Husband"></option>
+            <option value="Wife"></option>
+            <option value="Brother"></option>
+            <option value="Sister"></option>
+          </datalist>
+        </div>
+
+        <div class="row1">
+          <label>Age</label>
+          <input name="nominiAge" type="number" autocomplete="off" required/>
+        </div>
+
+        <div class="row1">
+          <label>ID Proof(Voter/PAN)</label>
+          <input name="nominiProof" type="text" autocomplete="off" required/>
+        </div>
+
+        <div class="row1">
+          <label>Maturity Type</label>
+          <input name="maturityType" list="type" autocomplete="off" required/>
+          <datalist id="type">
+            <option value="NEFT"></option>
+            <option value="RTGS"></option>
+            <option value="ECS"></option>
+            <option value="CASH"></option>
+          </datalist>
+        </div>
+
+        <div class="row1">
+          <label>REF/UTR/VC No.</label>
+          <input name="refNumber" type="number" autocomplete="off" required/>
+        </div>
+        <div class="btnCont">
+          <button class="saveButton" type="submit">
+            Save
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <%-include("partials/footer")-%>

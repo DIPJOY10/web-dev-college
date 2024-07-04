@@ -1,0 +1,171 @@
+body {
+  overflow-x: hidden;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.image {
+  height: 70vh;
+  width: 70vw;
+  object-fit: cover;
+  opacity: 0.8;
+  position: relative;
+  top: 50px;
+  left: 5%;
+  z-index: 50;
+}
+
+.info {
+  position: absolute;
+  top: 35%;
+  right: 4%;
+  width: 20vw;
+  height: 50vh;
+  color: #002366;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  z-index: 100;
+}
+
+.backcolor {
+  position: absolute;
+  height: 75vh;
+  width: 75vw;
+  top: 20%;
+  left: 20%;
+  background-color: #7c83fd;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0f52ba;
+  z-index: -2;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.about {
+  position: absolute;
+  padding: 30px;
+  top: 100%;
+  left: 10%;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1e5ea;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.info-about {
+  width: 40vw;
+  height: 50vh;
+  color: #77acf1;
+  font-size: 1.1rem;
+}
+.info-about > h1 {
+  color: #7c83fd;
+  font-size: 2.5rem;
+}
+
+.aboutimg {
+  object-fit: cover;
+  width: 25vw;
+  height: 30vh;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 95vh;
+  background-color: black;
+  position: absolute;
+  top: 158.5%;
+  background-color: #7c83fd;
+}
+
+.contact-form {
+  border: 2px solid white;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  width: 60vw;
+  height: 80vh;
+  top: 10%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form > h1 {
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.formOriginal {
+  padding-left: 15vw;
+}
+
+.formOriginal > input {
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  width: 30vw;
+  margin-bottom: 5px;
+}
+
+.formOriginal > textarea {
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  width: 30vw;
+}
+.formOriginal > button {
+  display: block;
+  width: 6vw;
+  height: 4vh;
+  border: none;
+  border-radius: 2px;
+  color: #7c83fd;
+  background-color: white;
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+}
+
+.formOriginal > button:hover {
+  color: white;
+  background-color: rgb(78, 86, 197);
+}
+
+.footer {
+  position: absolute;
+  background-color: #f9f9f9;
+  top: 253.5%;
+  color: #7c83fd;
+  width: 100vw;
+  height: 10vh;
+  font-size: 1.2em;
+}
+
+.footer > p {
+  padding-top: 1vw;
+  padding-left: 30vw;
+}

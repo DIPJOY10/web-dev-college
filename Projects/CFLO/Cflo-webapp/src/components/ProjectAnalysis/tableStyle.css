@@ -1,0 +1,115 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    *margin-left: -100px;
+}
+
+.tdStyle {
+    vertical-align: top;
+    padding: 10px;
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.tdColor {
+    color: #1684ea;
+}
+
+@media only screen and (max-width: 786px) {
+    .tdColor {
+        color: #1684ea;
+        font-size: 10px;
+    }
+}
+
+.thStyle {
+    vertical-align: top;
+    padding: 10px;
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 786px) {
+    .thStyle {
+        vertical-align: top;
+        padding: 10px;
+        font-size: 11px;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+}
+
+tr {
+    height: 50px;
+}
+
+#rowBorder {
+    box-shadow: 0px -2px 0px #B8B8B8;
+}
+
+#rowOtherBorder {
+    box-shadow: 0px -1px 0px #EAEAEA;
+}
+
+.fix {
+    position: absolute;
+    margin-left: -100px;
+    width: 315px;
+    text-align: left;
+    left: 100px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 786px) {
+    .fix {
+        position: absolute;
+        margin-left: -104px;
+        width: 165px;
+        left: 100px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+}
+
+.outer {
+    position: relative;
+}
+
+.inner {
+    overflow-x: auto;
+    overflow-y: visible;
+    margin-left: 300px;
+}
+
+@media only screen and (max-width: 786px) {
+    .inner {
+        overflow-x: auto;
+        overflow-y: visible;
+        margin-left: 162px;
+    }
+}
+
+.inner::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+
+.inner::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+
+.inner::-webkit-scrollbar-thumb {
+    background: #888;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+
+.inner::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

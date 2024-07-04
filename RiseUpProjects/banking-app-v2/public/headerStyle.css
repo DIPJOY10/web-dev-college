@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(123, 123, 207);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+/* navbar css */
+.navbar {
+  margin-bottom: 30px;
+}
+.navbar-nav {
+  position: absolute;
+  right: 15px;
+}
+h3 {
+  text-align: center;
+}
+.nav-item {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.mainCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 40px;
+}
+/* navbar css */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  padding: 40px 20px;
+}
+h2 {
+  color: white;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.form {
+  width: 60%;
+}
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 1.2em;
+}
+input {
+  width: 70%;
+  color: grey;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  height: 30px;
+}
+.row1 textarea {
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+.btnCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 10px 40px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  border-radius: 2px;
+}
+
+button:hover {
+  color: white;
+  background-color: #7952b3;
+}
+.rowSearch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+.rowSearch input {
+  width: 25%;
+}
+.rowSearch select {
+  height: 30px;
+  width: 20%;
+  outline: none;
+}
+table {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+th {
+  border: 2px solid white;
+  padding: 7px;
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 3px;
+  text-align: left;
+}
+td {
+  border: 2px solid white;
+  padding: 7px;
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 3px;
+  width: 40vw;
+}
+.reportsearch {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.reportsearch select {
+  width: 30%;
+  height: 45px;
+}
+.reportsearch button {
+  width: 15%;
+  height: 45px;
+}
